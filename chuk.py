@@ -1,5 +1,5 @@
 import re
-
+import streamlit as st
 def word_splitter(paragraph : str) -> list[str]:
     words = re.sub("\s+"," ",paragraph) # to check that ultiple spaces are removed coz u know s\+ ...
     return re.split("\s",words)
@@ -36,3 +36,5 @@ spe = word_splitter(src_txt)
 print(chuker(spe,5,0.4))
 
 # repr() - > to  represent a string representation of an object it includes all the special characters toooo.
+# we can use pip freeze  > requirements.txt to make a fiel on all the dependencies needed by the project
+# after using or cloneing the dir and activating virtual env (requirements.txt) use pip install -r requirements.txt
