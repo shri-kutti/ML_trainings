@@ -1,5 +1,5 @@
 import re
-import streamlit as st
+# import streamlit as st
 def word_splitter(paragraph : str) -> list[str]:
     words = re.sub("\s+"," ",paragraph) # to check that ultiple spaces are removed coz u know s\+ ...
     return re.split("\s",words)
